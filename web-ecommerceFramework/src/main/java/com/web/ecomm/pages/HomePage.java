@@ -5,7 +5,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-
 public class HomePage extends TestBase {
 	
 	@FindBy(className = "login")
@@ -18,7 +17,7 @@ public class HomePage extends TestBase {
 		
 	//	Actions	
 		
-		public String validateLoginPageTitle(){
+		public String validateHomePageTitle(){
 			return driver.getTitle();
 		}
 		

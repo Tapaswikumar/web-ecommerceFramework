@@ -27,7 +27,12 @@ public class LoginPage extends TestBase{
 		return driver.getTitle();
 	}
 	
-	public 
+	public MyAccountPage signIn (String mail, String passwrd) {
+		email.sendKeys(mail);
+		password.sendKeys(passwrd);
+		SigninBtn.click();
+		return new MyAccountPage();		
+	}
 	
 	
 }
