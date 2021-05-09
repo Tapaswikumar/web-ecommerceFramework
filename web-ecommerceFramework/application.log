@@ -1,14 +1,14 @@
-2021-05-08 20:31:15,386 DEBUG [main] InternalLoggerFactory:53 - Using Log4J as the default logging framework
-2021-05-08 20:31:15,400 DEBUG [main] ResourceLeakDetector:130 - -Dio.netty.leakDetection.level: simple
-2021-05-08 20:31:15,400 DEBUG [main] ResourceLeakDetector:131 - -Dio.netty.leakDetection.targetRecords: 4
-2021-05-08 20:31:15,409 DEBUG [main] ResourceLeakDetectorFactory:195 - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@5b057c8c
-2021-05-08 20:31:15,447 DEBUG [main] PlatformDependent:1015 - Platform: Windows
-2021-05-08 20:31:15,451 DEBUG [main] PlatformDependent0:408 - -Dio.netty.noUnsafe: false
-2021-05-08 20:31:15,452 DEBUG [main] PlatformDependent0:876 - Java version: 14
-2021-05-08 20:31:15,455 DEBUG [main] PlatformDependent0:125 - sun.misc.Unsafe.theUnsafe: available
-2021-05-08 20:31:15,457 DEBUG [main] PlatformDependent0:149 - sun.misc.Unsafe.copyMemory: available
-2021-05-08 20:31:15,459 DEBUG [main] PlatformDependent0:187 - java.nio.Buffer.address: available
-2021-05-08 20:31:15,461 DEBUG [main] PlatformDependent0:261 - direct buffer constructor: unavailable
+2021-05-09 17:14:44,769 DEBUG [main] InternalLoggerFactory:53 - Using Log4J as the default logging framework
+2021-05-09 17:14:44,791 DEBUG [main] ResourceLeakDetector:130 - -Dio.netty.leakDetection.level: simple
+2021-05-09 17:14:44,792 DEBUG [main] ResourceLeakDetector:131 - -Dio.netty.leakDetection.targetRecords: 4
+2021-05-09 17:14:44,816 DEBUG [main] ResourceLeakDetectorFactory:195 - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@2cc3ad05
+2021-05-09 17:14:44,851 DEBUG [main] PlatformDependent:1015 - Platform: Windows
+2021-05-09 17:14:44,854 DEBUG [main] PlatformDependent0:408 - -Dio.netty.noUnsafe: false
+2021-05-09 17:14:44,854 DEBUG [main] PlatformDependent0:876 - Java version: 14
+2021-05-09 17:14:44,858 DEBUG [main] PlatformDependent0:125 - sun.misc.Unsafe.theUnsafe: available
+2021-05-09 17:14:44,859 DEBUG [main] PlatformDependent0:149 - sun.misc.Unsafe.copyMemory: available
+2021-05-09 17:14:44,860 DEBUG [main] PlatformDependent0:187 - java.nio.Buffer.address: available
+2021-05-09 17:14:44,863 DEBUG [main] PlatformDependent0:261 - direct buffer constructor: unavailable
 java.lang.UnsupportedOperationException: Reflective setAccessible(true) disabled
 	at io.netty.util.internal.ReflectionUtil.trySetAccessible(ReflectionUtil.java:31)
 	at io.netty.util.internal.PlatformDependent0$4.run(PlatformDependent0.java:233)
@@ -33,7 +33,7 @@ java.lang.UnsupportedOperationException: Reflective setAccessible(true) disabled
 	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:176)
 	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:154)
 	at com.web.coreframework.configurations.TestBase.setUp(TestBase.java:38)
-	at com.web.ecomm.qa.tests.HomePageTests.initialize(HomePageTests.java:26)
+	at com.web.ecomm.qa.tests.HomePageTest.initialize(HomePageTest.java:26)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -57,12 +57,22 @@ java.lang.UnsupportedOperationException: Reflective setAccessible(true) disabled
 	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
 	at org.testng.TestNG.runSuites(TestNG.java:1063)
 	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-2021-05-08 20:31:15,470 DEBUG [main] PlatformDependent0:326 - java.nio.Bits.unaligned: available, true
-2021-05-08 20:31:15,473 DEBUG [main] PlatformDependent0:385 - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable
-java.lang.IllegalAccessException: class io.netty.util.internal.PlatformDependent0$6 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @5536379e
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+2021-05-09 17:14:44,871 DEBUG [main] PlatformDependent0:326 - java.nio.Bits.unaligned: available, true
+2021-05-09 17:14:44,874 DEBUG [main] PlatformDependent0:385 - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable
+java.lang.IllegalAccessException: class io.netty.util.internal.PlatformDependent0$6 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @3e14c16d
 	at java.base/jdk.internal.reflect.Reflection.newIllegalAccessException(Reflection.java:376)
 	at java.base/java.lang.reflect.AccessibleObject.checkAccess(AccessibleObject.java:647)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:556)
@@ -88,7 +98,7 @@ java.lang.IllegalAccessException: class io.netty.util.internal.PlatformDependent
 	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:176)
 	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:154)
 	at com.web.coreframework.configurations.TestBase.setUp(TestBase.java:38)
-	at com.web.ecomm.qa.tests.HomePageTests.initialize(HomePageTests.java:26)
+	at com.web.ecomm.qa.tests.HomePageTest.initialize(HomePageTest.java:26)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -112,54 +122,64 @@ java.lang.IllegalAccessException: class io.netty.util.internal.PlatformDependent
 	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
 	at org.testng.TestNG.runSuites(TestNG.java:1063)
 	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-2021-05-08 20:31:15,476 DEBUG [main] PlatformDependent0:398 - java.nio.DirectByteBuffer.<init>(long, int): unavailable
-2021-05-08 20:31:15,477 DEBUG [main] PlatformDependent:1058 - sun.misc.Unsafe: available
-2021-05-08 20:31:15,498 DEBUG [main] PlatformDependent:1158 - maxDirectMemory: 2134900736 bytes (maybe)
-2021-05-08 20:31:15,509 DEBUG [main] PlatformDependent:1177 - -Dio.netty.tmpdir: C:\Users\Tapaswi\AppData\Local\Temp (java.io.tmpdir)
-2021-05-08 20:31:15,510 DEBUG [main] PlatformDependent:1256 - -Dio.netty.bitMode: 64 (sun.arch.data.model)
-2021-05-08 20:31:15,513 DEBUG [main] PlatformDependent:177 - -Dio.netty.maxDirectMemory: -1 bytes
-2021-05-08 20:31:15,514 DEBUG [main] PlatformDependent:184 - -Dio.netty.uninitializedArrayAllocationThreshold: -1
-2021-05-08 20:31:15,516 DEBUG [main] CleanerJava9:71 - java.nio.ByteBuffer.cleaner(): available
-2021-05-08 20:31:15,517 DEBUG [main] PlatformDependent:204 - -Dio.netty.noPreferDirect: false
-2021-05-08 20:31:15,532 DEBUG [main] PlatformDependent:919 - org.jctools-core.MpscChunkedArrayQueue: available
-2021-05-08 20:31:15,651 DEBUG [main] JdkSslContext:96 - Default protocols (JDK): [TLSv1.2, TLSv1.1, TLSv1] 
-2021-05-08 20:31:15,652 DEBUG [main] JdkSslContext:97 - Default cipher suites (JDK): [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384]
-2021-05-08 20:31:15,693 DEBUG [main] InternalThreadLocalMap:56 - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
-2021-05-08 20:31:15,694 DEBUG [main] InternalThreadLocalMap:59 - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
-2021-05-08 20:31:15,713 DEBUG [main] MultithreadEventLoopGroup:44 - -Dio.netty.eventLoopThreads: 8
-2021-05-08 20:31:15,736 DEBUG [main] NioEventLoop:106 - -Dio.netty.noKeySetOptimization: false
-2021-05-08 20:31:15,737 DEBUG [main] NioEventLoop:107 - -Dio.netty.selectorAutoRebuildThreshold: 512
-2021-05-08 20:31:15,818 DEBUG [main] PooledByteBufAllocator:156 - -Dio.netty.allocator.numHeapArenas: 8
-2021-05-08 20:31:15,818 DEBUG [main] PooledByteBufAllocator:157 - -Dio.netty.allocator.numDirectArenas: 8
-2021-05-08 20:31:15,819 DEBUG [main] PooledByteBufAllocator:159 - -Dio.netty.allocator.pageSize: 8192
-2021-05-08 20:31:15,819 DEBUG [main] PooledByteBufAllocator:164 - -Dio.netty.allocator.maxOrder: 11
-2021-05-08 20:31:15,820 DEBUG [main] PooledByteBufAllocator:168 - -Dio.netty.allocator.chunkSize: 16777216
-2021-05-08 20:31:15,821 DEBUG [main] PooledByteBufAllocator:169 - -Dio.netty.allocator.tinyCacheSize: 512
-2021-05-08 20:31:15,821 DEBUG [main] PooledByteBufAllocator:170 - -Dio.netty.allocator.smallCacheSize: 256
-2021-05-08 20:31:15,822 DEBUG [main] PooledByteBufAllocator:171 - -Dio.netty.allocator.normalCacheSize: 64
-2021-05-08 20:31:15,822 DEBUG [main] PooledByteBufAllocator:172 - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
-2021-05-08 20:31:15,823 DEBUG [main] PooledByteBufAllocator:173 - -Dio.netty.allocator.cacheTrimInterval: 8192
-2021-05-08 20:31:15,823 DEBUG [main] PooledByteBufAllocator:174 - -Dio.netty.allocator.cacheTrimIntervalMillis: 0
-2021-05-08 20:31:15,824 DEBUG [main] PooledByteBufAllocator:175 - -Dio.netty.allocator.useCacheForAllThreads: true
-2021-05-08 20:31:15,824 DEBUG [main] PooledByteBufAllocator:176 - -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
-2021-05-08 20:31:15,842 DEBUG [main] ByteBufUtil:86 - -Dio.netty.allocator.type: pooled
-2021-05-08 20:31:15,843 DEBUG [main] ByteBufUtil:95 - -Dio.netty.threadLocalDirectBufferSize: 0
-2021-05-08 20:31:15,843 DEBUG [main] ByteBufUtil:98 - -Dio.netty.maxThreadLocalCharBufferSize: 16384
-2021-05-08 20:31:16,871 DEBUG [Forwarding newSession on session null to remote] DefaultChannelId:79 - -Dio.netty.processId: 8980 (auto-detected)
-2021-05-08 20:31:16,874 DEBUG [Forwarding newSession on session null to remote] NetUtil:139 - -Djava.net.preferIPv4Stack: false
-2021-05-08 20:31:16,874 DEBUG [Forwarding newSession on session null to remote] NetUtil:140 - -Djava.net.preferIPv6Addresses: false
-2021-05-08 20:31:16,886 DEBUG [Forwarding newSession on session null to remote] NetUtil:224 - Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
-2021-05-08 20:31:16,887 DEBUG [Forwarding newSession on session null to remote] NetUtil:289 - Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
-2021-05-08 20:31:16,914 DEBUG [Forwarding newSession on session null to remote] DefaultChannelId:101 - -Dio.netty.machineId: 94:39:e5:ff:fe:ca:cb:b1 (auto-detected)
-2021-05-08 20:31:16,993 DEBUG [AsyncHttpClient-3-1] AbstractByteBuf:63 - -Dio.netty.buffer.checkAccessible: true
-2021-05-08 20:31:16,995 DEBUG [AsyncHttpClient-3-1] AbstractByteBuf:64 - -Dio.netty.buffer.checkBounds: true
-2021-05-08 20:31:16,995 DEBUG [AsyncHttpClient-3-1] ResourceLeakDetectorFactory:195 - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@452382d5
-2021-05-08 20:31:17,048 DEBUG [AsyncHttpClient-3-1] Recycler:97 - -Dio.netty.recycler.maxCapacityPerThread: 4096
-2021-05-08 20:31:17,048 DEBUG [AsyncHttpClient-3-1] Recycler:98 - -Dio.netty.recycler.maxSharedCapacityFactor: 2
-2021-05-08 20:31:17,048 DEBUG [AsyncHttpClient-3-1] Recycler:99 - -Dio.netty.recycler.linkCapacity: 16
-2021-05-08 20:31:17,048 DEBUG [AsyncHttpClient-3-1] Recycler:100 - -Dio.netty.recycler.ratio: 8
-2021-05-08 20:31:31,592  INFO [main] HomePageTests:35 - ********************************************
-2021-05-08 20:31:31,600  INFO [main] HomePageTests:40 - ********************************************
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+2021-05-09 17:14:44,880 DEBUG [main] PlatformDependent0:398 - java.nio.DirectByteBuffer.<init>(long, int): unavailable
+2021-05-09 17:14:44,881 DEBUG [main] PlatformDependent:1058 - sun.misc.Unsafe: available
+2021-05-09 17:14:44,929 DEBUG [main] PlatformDependent:1158 - maxDirectMemory: 2134900736 bytes (maybe)
+2021-05-09 17:14:44,931 DEBUG [main] PlatformDependent:1177 - -Dio.netty.tmpdir: C:\Users\Tapaswi\AppData\Local\Temp (java.io.tmpdir)
+2021-05-09 17:14:44,932 DEBUG [main] PlatformDependent:1256 - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2021-05-09 17:14:44,934 DEBUG [main] PlatformDependent:177 - -Dio.netty.maxDirectMemory: -1 bytes
+2021-05-09 17:14:44,934 DEBUG [main] PlatformDependent:184 - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+2021-05-09 17:14:44,936 DEBUG [main] CleanerJava9:71 - java.nio.ByteBuffer.cleaner(): available
+2021-05-09 17:14:44,936 DEBUG [main] PlatformDependent:204 - -Dio.netty.noPreferDirect: false
+2021-05-09 17:14:44,950 DEBUG [main] PlatformDependent:919 - org.jctools-core.MpscChunkedArrayQueue: available
+2021-05-09 17:14:45,130 DEBUG [main] JdkSslContext:96 - Default protocols (JDK): [TLSv1.2, TLSv1.1, TLSv1] 
+2021-05-09 17:14:45,131 DEBUG [main] JdkSslContext:97 - Default cipher suites (JDK): [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384]
+2021-05-09 17:14:45,212 DEBUG [main] InternalThreadLocalMap:56 - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+2021-05-09 17:14:45,213 DEBUG [main] InternalThreadLocalMap:59 - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+2021-05-09 17:14:45,230 DEBUG [main] MultithreadEventLoopGroup:44 - -Dio.netty.eventLoopThreads: 8
+2021-05-09 17:14:45,289 DEBUG [main] NioEventLoop:106 - -Dio.netty.noKeySetOptimization: false
+2021-05-09 17:14:45,289 DEBUG [main] NioEventLoop:107 - -Dio.netty.selectorAutoRebuildThreshold: 512
+2021-05-09 17:14:45,398 DEBUG [main] PooledByteBufAllocator:156 - -Dio.netty.allocator.numHeapArenas: 8
+2021-05-09 17:14:45,399 DEBUG [main] PooledByteBufAllocator:157 - -Dio.netty.allocator.numDirectArenas: 8
+2021-05-09 17:14:45,399 DEBUG [main] PooledByteBufAllocator:159 - -Dio.netty.allocator.pageSize: 8192
+2021-05-09 17:14:45,400 DEBUG [main] PooledByteBufAllocator:164 - -Dio.netty.allocator.maxOrder: 11
+2021-05-09 17:14:45,401 DEBUG [main] PooledByteBufAllocator:168 - -Dio.netty.allocator.chunkSize: 16777216
+2021-05-09 17:14:45,402 DEBUG [main] PooledByteBufAllocator:169 - -Dio.netty.allocator.tinyCacheSize: 512
+2021-05-09 17:14:45,403 DEBUG [main] PooledByteBufAllocator:170 - -Dio.netty.allocator.smallCacheSize: 256
+2021-05-09 17:14:45,403 DEBUG [main] PooledByteBufAllocator:171 - -Dio.netty.allocator.normalCacheSize: 64
+2021-05-09 17:14:45,404 DEBUG [main] PooledByteBufAllocator:172 - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+2021-05-09 17:14:45,404 DEBUG [main] PooledByteBufAllocator:173 - -Dio.netty.allocator.cacheTrimInterval: 8192
+2021-05-09 17:14:45,405 DEBUG [main] PooledByteBufAllocator:174 - -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+2021-05-09 17:14:45,406 DEBUG [main] PooledByteBufAllocator:175 - -Dio.netty.allocator.useCacheForAllThreads: true
+2021-05-09 17:14:45,407 DEBUG [main] PooledByteBufAllocator:176 - -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+2021-05-09 17:14:45,433 DEBUG [main] ByteBufUtil:86 - -Dio.netty.allocator.type: pooled
+2021-05-09 17:14:45,433 DEBUG [main] ByteBufUtil:95 - -Dio.netty.threadLocalDirectBufferSize: 0
+2021-05-09 17:14:45,434 DEBUG [main] ByteBufUtil:98 - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+2021-05-09 17:14:46,759 DEBUG [Forwarding newSession on session null to remote] DefaultChannelId:79 - -Dio.netty.processId: 13580 (auto-detected)
+2021-05-09 17:14:46,774 DEBUG [Forwarding newSession on session null to remote] NetUtil:139 - -Djava.net.preferIPv4Stack: false
+2021-05-09 17:14:46,775 DEBUG [Forwarding newSession on session null to remote] NetUtil:140 - -Djava.net.preferIPv6Addresses: false
+2021-05-09 17:14:46,787 DEBUG [Forwarding newSession on session null to remote] NetUtil:224 - Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+2021-05-09 17:14:46,788 DEBUG [Forwarding newSession on session null to remote] NetUtil:289 - Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
+2021-05-09 17:14:46,815 DEBUG [Forwarding newSession on session null to remote] DefaultChannelId:101 - -Dio.netty.machineId: 94:39:e5:ff:fe:ca:cb:b1 (auto-detected)
+2021-05-09 17:14:46,954 DEBUG [AsyncHttpClient-3-1] AbstractByteBuf:63 - -Dio.netty.buffer.checkAccessible: true
+2021-05-09 17:14:46,955 DEBUG [AsyncHttpClient-3-1] AbstractByteBuf:64 - -Dio.netty.buffer.checkBounds: true
+2021-05-09 17:14:46,955 DEBUG [AsyncHttpClient-3-1] ResourceLeakDetectorFactory:195 - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@23ababcc
+2021-05-09 17:14:47,028 DEBUG [AsyncHttpClient-3-1] Recycler:97 - -Dio.netty.recycler.maxCapacityPerThread: 4096
+2021-05-09 17:14:47,028 DEBUG [AsyncHttpClient-3-1] Recycler:98 - -Dio.netty.recycler.maxSharedCapacityFactor: 2
+2021-05-09 17:14:47,029 DEBUG [AsyncHttpClient-3-1] Recycler:99 - -Dio.netty.recycler.linkCapacity: 16
+2021-05-09 17:14:47,029 DEBUG [AsyncHttpClient-3-1] Recycler:100 - -Dio.netty.recycler.ratio: 8
+2021-05-09 17:15:42,097  INFO [main] HomePageTest:35 - ********************************************
+2021-05-09 17:15:42,183  INFO [main] HomePageTest:40 - ********************************************
