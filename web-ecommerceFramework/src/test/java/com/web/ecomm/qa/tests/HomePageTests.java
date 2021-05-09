@@ -1,5 +1,6 @@
 package com.web.ecomm.qa.tests;
 
+import org.apache.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -18,6 +19,7 @@ public class HomePageTests extends TestBase {
 		super();
 	}
 	
+	Logger log=Logger.getLogger(HomePageTests.class);
 	
 	@BeforeClass
 	public void initialize(){
@@ -30,10 +32,12 @@ public class HomePageTests extends TestBase {
 	@Test
 	public void TC01_HomepageTitleTest() {
 		Assert.assertEquals(homePage.validateHomePageTitle(), "My Store");
+		log.info("********************************************" );
 	}
 	
 	@Test
 	public void TC02_HomepageSignInTest() {
+		log.info("********************************************" );
 		loginPage=homePage.login();
 	}
 	

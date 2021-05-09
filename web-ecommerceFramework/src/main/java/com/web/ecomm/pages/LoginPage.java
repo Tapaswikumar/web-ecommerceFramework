@@ -1,13 +1,16 @@
 package com.web.ecomm.pages;
 
 import com.web.coreframework.configurations.TestBase;
+import org.slf4j.Logger;  
+import org.slf4j.LoggerFactory;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-
 public class LoginPage extends TestBase{
 	
+	Logger log=LoggerFactory.getLogger(LoginPage.class);
+		
 	@FindBy(id="email")
 	WebElement email;
 	
@@ -24,6 +27,7 @@ public class LoginPage extends TestBase{
 		
 	//Actions:
 	public String validateLoginPageTitle(){
+		log.info("title got printed or not bhai" );
 		return driver.getTitle();
 	}
 	
