@@ -12,13 +12,13 @@ import com.web.ecomm.pages.HomePage;
 import com.web.ecomm.pages.LoginPage;
 import com.web.ecomm.pages.MyAccountPage;
 
-public class LoginPageTests extends TestBase{
+public class LoginPageTest extends TestBase{
 	
 	LoginPage loginPage;
 	HomePage homePage;
 	MyAccountPage accPage;
 	
-	public LoginPageTests(){
+	public LoginPageTest(){
 		super();
 	}
 	

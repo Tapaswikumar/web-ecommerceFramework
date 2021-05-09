@@ -10,16 +10,16 @@ import com.web.coreframework.configurations.TestBase;
 import com.web.ecomm.pages.HomePage;
 import com.web.ecomm.pages.LoginPage;
 
-public class HomePageTests extends TestBase {
+public class HomePageTest extends TestBase {
 	
 	LoginPage loginPage;
 	HomePage homePage;
 	
-	public HomePageTests(){
+	public HomePageTest(){
 		super();
 	}
 	
-	Logger log=Logger.getLogger(HomePageTests.class);
+	Logger log=Logger.getLogger(HomePageTest.class);
 	
 	@BeforeClass
 	public void initialize(){
