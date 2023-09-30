@@ -1,9 +1,10 @@
 package com.web.ecomm.pages;
 
-import com.web.coreframework.configurations.TestBase;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+
+import com.web.coreframework.configurations.TestBase;
 
 public class HomePage extends TestBase {
 	

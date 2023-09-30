@@ -3,21 +3,21 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.web.ecomm.qa.tests.LoginPageTests">
+      <class name="com.web.ecomm.qa.tests.HomePageTest">
         <methods>
+          <include name="initialize"/>
+          <include name="end"/>
+          <include name="TC02_HomepageSignInTest"/>
+          <include name="TC01_HomepageTitleTest"/>
+        </methods>
+      </class> <!-- com.web.ecomm.qa.tests.HomePageTest -->
+      <class name="com.web.ecomm.qa.tests.LoginPageTest">
+        <methods>
+          <include name="end"/>
           <include name="initialize"/>
           <include name="TC01_ValidSignInTest"/>
-          <include name="end"/>
         </methods>
-      </class> <!-- com.web.ecomm.qa.tests.LoginPageTests -->
-      <class name="com.web.ecomm.qa.tests.HomePageTests">
-        <methods>
-          <include name="initialize"/>
-          <include name="end"/>
-          <include name="TC01_HomepageTitleTest"/>
-          <include name="TC02_HomepageSignInTest"/>
-        </methods>
-      </class> <!-- com.web.ecomm.qa.tests.HomePageTests -->
+      </class> <!-- com.web.ecomm.qa.tests.LoginPageTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
